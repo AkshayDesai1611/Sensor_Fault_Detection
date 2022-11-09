@@ -10,38 +10,43 @@ In this project, the system in focus is the Air Pressure system (APS) which gene
 
 The problem is to reduce the cost due to unnecessary repairs. So it is required to minimize the false predictions.
 
-Tech Stack Used
+#Tech Stack Used
 Python
 FastAPI
 Machine learning algorithms
 Docker
 MongoDB
-Infrastructure Required.
+
+#Infrastructure Required.
 AWS S3
 AWS EC2
 AWS ECR
 Git Actions
 Terraform
-How to run?
+
+#How to run?
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
 
-Data Collections
+#Data Collections
 image
 
-Project Archietecture
+#Project Archietecture
 image
 
-Deployment Archietecture
+#Deployment Archietecture
 image
 
-Step 1: Clone the repository
+#Step 1: Clone the repository
 git clone https://github.com/sethusaim/Sensor-Fault-Detection.git
-Step 2- Create a conda environment after opening the repository
+
+#Step 2- Create a conda environment after opening the repository
 conda create -n sensor python=3.7.6 -y
 conda activate sensor
-Step 3 - Install the requirements
+
+#Step 3 - Install the requirements
 pip install -r requirements.txt
-Step 4 - Export the environment variable
+
+#Step 4 - Export the environment variable
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
@@ -49,20 +54,24 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 
 export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1w4s.mongodb.net/?retryWrites=true&w=majority"
-Step 5 - Run the application server
+  
+#Step 5 - Run the application server
 python app.py
-Step 6. Train application
+  
+#Step 6. Train application
 http://localhost:8080/train
-Step 7. Prediction application
+  
+#Step 7. Prediction application
 http://localhost:8080/predict
-Run locally
-Check if the Dockerfile is available in the project directory
+  
+#Run locally
+1.Check if the Dockerfile is available in the project directory
 
-Build the Docker image
+2.Build the Docker image
 
 docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> --build-arg AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION> --build-arg MONGODB_URL=<MONGODB_URL> . 
 
-Run the Docker image
+3.Run the Docker image
 docker run -d -p 8080:8080 <IMAGE_NAME>
 To run the project first execute the below commmand. MONGO DB URL:
 
