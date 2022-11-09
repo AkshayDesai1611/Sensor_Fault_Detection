@@ -28,13 +28,15 @@ Terraform
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
 
 # Data Collections
-image
+![image](https://user-images.githubusercontent.com/90135094/200799920-a3826e36-575f-476f-be96-f42464fb79dd.png)
+
 
 # Project Archietecture
-image
+![image](https://user-images.githubusercontent.com/90135094/200800102-c0b66388-53d9-418e-bd63-2e9291aa771a.png)
 
 # Deployment Archietecture
-image
+![image](https://user-images.githubusercontent.com/90135094/200800017-915b93db-3e6c-465e-a014-a32739a8e8db.png)
+
 
 # Step 1: Clone the repository
 git clone https://github.com/sethusaim/Sensor-Fault-Detection.git
