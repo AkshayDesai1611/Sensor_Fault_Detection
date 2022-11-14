@@ -11,8 +11,12 @@ sensor/aws_cloud_storage/__init__.py
 sensor/components/__init__.py
 sensor/configurations/__init__.py
 sensor/configurations/mongo_db_connection.py
+sensor/constants/S3_Bucket.py
 sensor/constants/__init__.py
+sensor/constants/application.py
 sensor/constants/database.py
+sensor/constants/env_variables.py
+sensor/constants/training_pipeline/__init__.py
 sensor/data_access/__init__.py
 sensor/entity/__init__.py
 sensor/entity/artifact_entity.py
