@@ -9,6 +9,9 @@ sensor.egg-info/dependency_links.txt
 sensor.egg-info/top_level.txt
 sensor/aws_cloud_storage/__init__.py
 sensor/components/__init__.py
+sensor/components/data_ingestion.py
+sensor/components/data_transformation.py
+sensor/components/data_validation.py
 sensor/configurations/__init__.py
 sensor/configurations/mongo_db_connection.py
 sensor/constants/S3_Bucket.py
@@ -18,8 +21,14 @@ sensor/constants/database.py
 sensor/constants/env_variables.py
 sensor/constants/training_pipeline/__init__.py
 sensor/data_access/__init__.py
+sensor/data_access/sensordata.py
 sensor/entity/__init__.py
 sensor/entity/artifact_entity.py
 sensor/entity/config_entity.py
 sensor/machine_learning/__init__.py
+sensor/machine_learning/model/__init__.py
+sensor/machine_learning/model/estimator.py
 sensor/pipeline/__init__.py
+sensor/pipeline/training_pipeline.py
+sensor/utils/__init__.py
+sensor/utils/main_utils.py

@@ -4,6 +4,7 @@ from sensor.exception import SensorException
 import os,sys
 import yaml
 import numpy as np
+import dill
 
 def read_yaml_file(file_path: str)-> dict:
     try:
