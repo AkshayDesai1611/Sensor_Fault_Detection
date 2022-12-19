@@ -51,7 +51,7 @@ class ModelTrainer:
             y_train_pred = model.predict(x_train)
             classification_train_metric = get_classification_score(y_true=y_train,y_pred=y_train_pred)
 
-            if classification_train_metric.f1_score <   = self.model_trainer_config.expected_accuracy:
+            if classification_train_metric.f1_score <= self.model_trainer_config.expected_accuracy:
                 raise Exception ("Trained model is not good to provide expected accuracy")
 
             y_test_pred = model.predict(x_test)

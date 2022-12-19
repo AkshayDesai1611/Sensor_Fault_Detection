@@ -10,7 +10,7 @@ from sensor.exception import SensorException
 
 class SensorData:
     """
-    This class help to export entire mongo db record as pandas dataframe
+    This class will help to export entire mongo db record as pandas dataframe
     """
 
     def __init__(self):
